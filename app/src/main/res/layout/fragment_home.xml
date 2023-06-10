@@ -1,0 +1,608 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/homefragmentAnimation"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/locationtag"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/baseline_location_on_black_36" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/new_york"
+            android:textColor="#222"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/temp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/locationtag"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView_Gif"
+            android:layout_width="150sp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="20sp"
+            android:src="@drawable/baseline_cloud_black_36" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#222"
+            android:text="@string/_27"
+            android:textSize="60sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/temp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#222"
+            android:text="@string/cloudy"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="6dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="true">
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#5A3333">
+
+
+
+
+                <!-- Linear LAyout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/temperature_forecast_next_48hrs"
+                        android:textAlignment="center"
+                        android:textColor="#a2a1b8"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8sp"
+                        android:layout_marginTop="20sp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="70sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_8_30_am"
+                                android:textColor="#a2a1b8"
+                                android:textSize="16sp"/>
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="26dp"
+                                android:src="@drawable/baseline_cloud_black_36"
+                                android:layout_marginStart="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="26dp"
+                                android:text="@string/_27"
+                                android:textColor="#a2a1b8"
+                                android:textSize="20sp"
+                                android:layout_marginStart="22sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="70sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_11_30_am"
+                                android:textColor="#a2a1b8"
+                                android:textSize="16sp"/>
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="26dp"
+                                android:src="@drawable/baseline_cloud_black_36"
+                                android:layout_marginStart="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="26dp"
+                                android:text="@string/_29"
+                                android:textColor="#a2a1b8"
+                                android:textSize="20sp"
+                                android:layout_marginStart="22sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="70sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_11_30_am"
+                                android:textColor="#a2a1b8"
+                                android:textSize="16sp"/>
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="26dp"
+                                android:src="@drawable/baseline_cloud_black_36"
+                                android:layout_marginStart="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="26dp"
+                                android:text="@string/_29"
+                                android:textColor="#a2a1b8"
+                                android:textSize="20sp"
+                                android:layout_marginStart="22sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="70sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_11_30_am"
+                                android:textColor="#a2a1b8"
+                                android:textSize="16sp"/>
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="26dp"
+                                android:src="@drawable/baseline_cloud_black_36"
+                                android:layout_marginStart="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="26dp"
+                                android:text="@string/_29"
+                                android:textColor="#a2a1b8"
+                                android:textSize="20sp"
+                                android:layout_marginStart="22sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="70sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_11_30_am"
+                                android:textColor="#a2a1b8"
+                                android:textSize="16sp"/>
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="26dp"
+                                android:src="@drawable/baseline_cloud_black_36"
+                                android:layout_marginStart="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="26dp"
+                                android:text="@string/_29"
+                                android:textColor="#a2a1b8"
+                                android:textSize="20sp"
+                                android:layout_marginStart="22sp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daily Forecast 7 days"
+                        android:textAlignment="center"
+                        android:textColor="#a2a1b8"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="30sp"
+                        android:layout_marginStart="68sp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="20sp">
+
+                        <LinearLayout
+                            android:layout_width="180sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sunday"
+                                android:textColor="#a2a1b8"
+                                android:textSize="16sp"
+                                android:layout_marginStart="64sp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:textSize="12sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/temperature"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:background="#0000"
+                                    android:padding="16dp"/>
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:padding="16dp"
+                                    android:text="@string/_23_23"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:textSize="12sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/wind_speed"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:background="#0000"
+                                    android:padding="16dp"/>
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:padding="16dp"
+                                    android:text="@string/_3_8"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:textSize="12sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/uv_index"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:background="#0000"
+                                    android:padding="16dp"/>
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:padding="16dp"
+                                    android:text="@string/_12_1"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:textSize="12sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/rainfall"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:background="#0000"
+                                    android:padding="16dp"/>
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:padding="16dp"
+                                    android:text="@string/_0_51mm"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:textSize="12sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Alerts"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:background="#0000"
+                                    android:padding="16dp"/>
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:padding="16dp"
+                                    android:text="Floods"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="180sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sunday"
+                                android:textColor="#a2a1b8"
+                                android:textSize="16sp"
+                                android:layout_marginStart="64sp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:textSize="12sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/temperature"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:background="#0000"
+                                    android:padding="16dp"/>
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:padding="16dp"
+                                    android:text="@string/_23_23"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:textSize="12sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/wind_speed"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:background="#0000"
+                                    android:padding="16dp"/>
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:padding="16dp"
+                                    android:text="@string/_3_8"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:textSize="12sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/uv_index"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:background="#0000"
+                                    android:padding="16dp"/>
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:padding="16dp"
+                                    android:text="@string/_12_1"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:textSize="12sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/rainfall"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:background="#0000"
+                                    android:padding="16dp"/>
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:padding="16dp"
+                                    android:text="@string/_0_51mm"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:textSize="12sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Alerts"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:background="#0000"
+                                    android:padding="16dp"/>
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#a2a1b8"
+                                    android:maxLength="12"
+                                    android:padding="16dp"
+                                    android:text="Floods"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

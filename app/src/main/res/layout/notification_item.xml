@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    app:cardCornerRadius="20sp"
+    app:cardElevation="10sp">
+
+    <LinearLayout
+        android:id="@+id/notification_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="30sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/notification_alert_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alert_type"
+                android:textColor="#222"/>
+
+            <TextView
+                android:id="@+id/alert_type_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/value"
+                android:textColor="#222"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upper_limit"
+                android:textColor="#222"/>
+
+            <TextView
+                android:id="@+id/notification_upper_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/upper_limit_item"
+                android:textColor="#222"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lower_limit_item"
+                android:textColor="#222"/>
+
+            <TextView
+                android:id="@+id/notification_lower_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/value_lower_limit_item"
+                android:textColor="#222"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_send"
+                android:textColor="#222"/>
+
+            <TextView
+                android:id="@+id/notification_date_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12-12-2023 12:34:56"
+                android:textColor="#222"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/notification_user_message"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:text="@string/notification_message"
+                android:textColor="#222"/>
+
+            <TextView
+                android:id="@+id/user_message_notification_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="start"
+                android:textColor="#222"
+                android:inputType="textMultiLine"
+                android:enabled="false"
+                android:textSize="15sp"
+                android:singleLine="false"
+                android:minLines="2"
+                android:maxLines="9"
+                android:padding="15sp"
+                android:text="@string/user_message" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_notifications_markasread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mark_as_read"
+                android:textColor="#fff"
+                android:layout_marginStart="20sp"/>
+
+            <Button
+                android:id="@+id/button_notifications_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delete_notification"
+                android:textColor="#fff"
+                android:layout_marginStart="20sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

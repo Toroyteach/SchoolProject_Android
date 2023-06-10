@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "974246712032",
+    "project_id": "school-customweather",
+    "storage_bucket": "school-customweather.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974246712032:android:4ed2c3e837717fa4f07685",
+        "android_client_info": {
+          "package_name": "com.example.schoolproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974246712032-gtn4aubgr2t027c9duedsddvgbejsdet.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.schoolproject",
+            "certificate_hash": "6064c90e5af3532afe15cf67ab88a4233396b937"
+          }
+        },
+        {
+          "client_id": "974246712032-upsgfn8m6ehrokgiq0urdt7p36sp48pe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-9k21fMK_4qoaS81pWTtPDEbxrndbrMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974246712032-upsgfn8m6ehrokgiq0urdt7p36sp48pe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

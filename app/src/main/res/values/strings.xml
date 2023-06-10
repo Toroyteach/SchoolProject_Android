@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">Toro-Teach Weather Application</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="_456_friends">456 Friends</string>
+    <string name="_562_followings">562 Followings</string>
+    <string name="sam_enric">Sam Enric</string>
+    <string name="sam_seotoolzz_com">sam@seotoolzz.com</string>
+    <string name="password">Password</string>
+    <string name="passwordhint">**********</string>
+    <string name="phone">Phone Number</string>
+    <string name="facebook">254710516288</string>
+    <string name="google">Account Status</string>
+    <string name="enabled">Enabled</string>
+    <string name="backgroundimage">BackgroundImage</string>
+    <string name="logout">Logout</string>
+    <string name="update">Update</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="title_activity_main">Toroy-Teach Weather</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="dont_have_an_account_nregister_here">Dont have an Account? Register Here.</string>
+    <string name="PhoneNumber">Phone Number</string>
+    <string name="register">Register</string>
+    <string name="already_registered_nlogin_here">Already Register? Login Here</string>
+    <string name="hello_first_fragment">Hello</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="textTitle">Text Title</string>
+    <string name="textButton">Submit</string>
+    <string name="although_this_is_a_demo_project_and_this_project_is_all_about_the_customization_of_a_dialog_box_we_can_design_whatever_we_want">Although this is a demo project, And this project is all about the customization of a Dialog Box. We can design whatever we want!</string>
+    <string name="custom_dialog_title">Custom Dialog Title</string>
+    <string name="yes">Yes</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Profile</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="location">Location</string>
+    <string name="new_york">Mois Bridge, Kenya</string>
+    <string name="_27">27</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="_8_30_am">8:30 am</string>
+    <string name="_11_30_am">11:30 am</string>
+    <string name="_2_30_pm">2:30 pm</string>
+    <string name="_31">31</string>
+    <string name="_4_30_pm">4:30 pm</string>
+    <string name="_29">29</string>
+    <string name="_33">33</string>
+    <string name="temperature_forecast_next_48hrs">Temperature Forecast Next 48hrs</string>
+    <string name="sunday">Sunday</string>
+    <string name="_12">12・</string>
+    <string name="temperature">Temperature</string>
+    <string name="_23">23•</string>
+    <string name="_23_23">23.23•</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="_3_8">3.8</string>
+    <string name="_12_1">12.1</string>
+    <string name="uv_index">uV Index</string>
+    <string name="rainfall">Rainfall</string>
+    <string name="_0_51mm">0.51mm</string>
+    <string name="add_alert">Add Alert</string>
+    <string name="message_to_display">Message to Display</string>
+    <string name="upper_range">Upper Range</string>
+    <string name="lower_range">Lower Range</string>
+    <string name="user_message">Next week you need to look for spray wind is going to be favourable</string>
+    <string name="alert_type">Alert Type:</string>
+    <string name="value">Temperature</string>
+    <string name="upper_limit">Upper Limit:</string>
+    <string name="upper_limit_item">23º</string>
+    <string name="lower_limit_item">Lower Limit:</string>
+    <string name="value_lower_limit_item">19º</string>
+    <string name="update_item_btn">Update</string>
+    <string name="delete">Delete</string>
+    <string name="notification_message">Notification Message:</string>
+    <string-array name="alert_types">
+        <item>Choose Alert Type</item>
+        <item>Temperature</item>
+        <item>WindSpeed</item>
+        <item>UV Indec</item>
+        <item>Rainfall</item>
+    </string-array>
+    <string name="choose_alert_type">Choose Alert Type:</string>
+    <string name="_19">19º</string>
+    <string name="your_added_alerts">Your Added Alerts</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="status">Status</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="update_profile">Update Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notifications">Notifications</string>
+    <string name="date_send">Date Send</string>
+    <string name="notifications_sent">Notifications Received</string>
+    <string name="_21_received">21 Received</string>
+    <string name="_3_created">3 Creted</string>
+    <string name="_3_createdd">3 created</string>
+    <string name="update_password">Update Password</string>
+    <string name="update_user_details">Update User Details</string>
+    <string name="update_user">Update User</string>
+    <string name="refresh_location">Refresh location</string>
+
+    <string name="default_notification_channel_id">My Channel Id</string>
+    <string name="delete_notification">Delete Notification</string>
+    <string name="mark_as_read">Mark As read</string>
+
+</resources>

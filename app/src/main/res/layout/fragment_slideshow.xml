@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slideshow.SlideshowFragment"
+    android:padding="20sp"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/fragmentLayoutCrudGradientAnimation">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#D5C1C1">
+
+
+        <Spinner
+            android:id="@+id/spinnerAlertType"
+            android:layout_width="fill_parent"
+            android:layout_height="50sp"
+            android:prompt="@string/choose_alert_type"
+            android:entries="@array/alert_types"
+            android:spinnerMode="dialog" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50sp"
+                        android:layout_weight="1"
+                        android:text="@string/upper_range"
+                        android:textColor="#222"/>
+
+                    <EditText
+                        android:id="@+id/edit_text_upper_limit"
+                        android:layout_width="80sp"
+                        android:layout_height="50sp"
+                        android:hint="@string/_23"
+                        android:inputType="numberDecimal|numberSigned"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="50sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/lower_range"
+                        android:textColor="#222"/>
+
+                    <EditText
+                        android:id="@+id/edit_text_lower_limit"
+                        android:layout_width="80sp"
+                        android:layout_height="50sp"
+                        android:hint="@string/_19"
+                        android:inputType="numberDecimal|numberSigned"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/edit_text_user_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/message_to_display"
+            android:inputType="textMultiLine"
+            android:autoSizeTextType="uniform"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:layout_gravity="center_horizontal"
+            android:maxLength="100"
+            android:textColor="#222"
+            />
+
+        <Button
+            android:id="@+id/buttonAddUpdateCustomAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f4f4f4"
+            android:text="@string/add_alert" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_weight="1"
+        android:layout_marginTop="20sp"
+        android:text="@string/your_added_alerts"
+        android:textColor="#222"
+        android:gravity="center"
+        android:layout_below="@id/linearLayout"
+        android:background="#D5C1C1"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:scrollbars="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginTop="80sp"
+        android:paddingTop="10sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"  />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

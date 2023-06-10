@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/fragmentLayoutNotificationGradientAnimation"
+    tools:context=".ui.notice.NotificationFragment">
+
+    <TextView
+        android:id="@+id/headingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notifications_sent"
+        android:textSize="24sp"
+        android:textColor="#222"
+        android:padding="16dp"
+        android:background="#D5C1C1"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listViewNotification"
+        android:layout_width="match_parent"
+        android:layout_height="500sp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:padding="16dp"
+        android:layout_below="@+id/headingTextView"
+        android:layout_marginTop="20sp"/>
+
+</RelativeLayout>
