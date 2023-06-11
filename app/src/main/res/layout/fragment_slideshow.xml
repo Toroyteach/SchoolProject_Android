@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.slideshow.SlideshowFragment"
+    tools:context=".ui.alerts.AlertshowFragment"
     android:padding="20sp"
     android:background="@drawable/gradient_list"
     android:id="@+id/fragmentLayoutCrudGradientAnimation">
@@ -56,7 +56,7 @@
                         android:id="@+id/edit_text_upper_limit"
                         android:layout_width="80sp"
                         android:layout_height="50sp"
-                        android:hint="@string/_23"
+                        android:hint="@string/_23_23"
                         android:inputType="numberDecimal|numberSigned"/>
 
                 </LinearLayout>

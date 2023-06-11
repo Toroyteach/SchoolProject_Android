@@ -253,7 +253,7 @@ public class MainActivity extends AppCompatActivity {
                 LocationData locationData = new LocationData(latitude, longitude, locationName);
                 callback.onLocationReceived(locationData);
             } else {
-                Toast.makeText(this, "Unable to retrieve location.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Unable to retrieve location. Give Maps in On your Device Relavant Permissions.", Toast.LENGTH_LONG).show();
             }
         }
     }

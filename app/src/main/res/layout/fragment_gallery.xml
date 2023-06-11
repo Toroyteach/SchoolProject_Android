@@ -7,7 +7,7 @@
     android:padding="20sp"
     android:background="@drawable/gradient_list"
     android:id="@+id/fragmentLayoutProfileGradientAnimation"
-    tools:context=".ui.gallery.GalleryFragment">
+    tools:context=".ui.profile.GalleryFragment">
 
     <FrameLayout
         android:layout_width="match_parent"

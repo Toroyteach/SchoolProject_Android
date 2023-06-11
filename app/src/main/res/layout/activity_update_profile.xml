@@ -3,7 +3,7 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#C1AFAF"
-    tools:context=".ui.gallery.UpdateProfileActivity">
+    tools:context=".ui.profile.UpdateProfileActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -13,19 +13,25 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.example.schoolproject.ui.gallery.GalleryFragment"
+        android:name="com.example.schoolproject.ui.profile.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.schoolproject.ui.slideshow.SlideshowFragment"
+        android:name="com.example.schoolproject.ui.alerts.AlertshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
         android:id="@+id/nav_notification"
-        android:name="com.example.schoolproject.ui.notice.NotificationFragment"
+        android:name="com.example.schoolproject.ui.notification.NotificationFragment"
         android:label="@string/notifications"
+        tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="com.example.schoolproject.ui.feedback.FeedBackFragment"
+        android:label="@string/feedback"
         tools:layout="@layout/fragment_notification" />
 </navigation>

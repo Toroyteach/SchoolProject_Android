@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Toro-Teach Weather Application</string>
+    <string name="app_name">TTWApp</string>
     <string name="name">Name</string>
     <string name="email">Email</string>
     <string name="_456_friends">456 Friends</string>
@@ -16,7 +16,7 @@
     <string name="logout">Logout</string>
     <string name="update">Update</string>
     <string name="delete_account">Delete Account</string>
-    <string name="title_activity_main">Toroy-Teach Weather</string>
+    <string name="title_activity_main">TTWApp</string>
     <string name="username">Username</string>
     <string name="login">Login</string>
     <string name="dont_have_an_account_nregister_here">Dont have an Account? Register Here.</string>
@@ -60,7 +60,7 @@
     <string name="_12">12・</string>
     <string name="temperature">Temperature</string>
     <string name="_23">23•</string>
-    <string name="_23_23">23.23•</string>
+    <string name="_23_23">23.23</string>
     <string name="wind_speed">Wind Speed</string>
     <string name="_3_8">3.8</string>
     <string name="_12_1">12.1</string>
@@ -89,7 +89,7 @@
         <item>Rainfall</item>
     </string-array>
     <string name="choose_alert_type">Choose Alert Type:</string>
-    <string name="_19">19º</string>
+    <string name="_19">19.0</string>
     <string name="your_added_alerts">Your Added Alerts</string>
     <string name="cancel">Cancel</string>
     <string name="submit">Submit</string>
@@ -113,5 +113,11 @@
     <string name="default_notification_channel_id">My Channel Id</string>
     <string name="delete_notification">Delete Notification</string>
     <string name="mark_as_read">Mark As read</string>
+    <string name="description">Description</string>
+    <string name="feedback">FeedBack</string>
+    <string name="daily_forecast_7_days">Daily Forecast 7 days</string>
+    <string name="feedback_form">Feedback Form</string>
+    <string name="pop">POP</string>
+    <string name="_0_2">0.2</string>
 
 </resources>

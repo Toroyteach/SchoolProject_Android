@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.gallery.UpdateProfileActivity"
+            android:name=".ui.profile.UpdateProfileActivity"
             android:exported="false" />
         <activity
             android:name=".MenuActivity"

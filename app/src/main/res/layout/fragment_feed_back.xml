@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.feedback.FeedBackFragment"
+    android:gravity="center"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/feedbackfragmentAnimation">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#5A3333">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback_form"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject:"
+            android:textSize="16sp"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/editTextSubject_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter subject"
+            android:textSize="16sp"
+            android:textColorHint="#a2a1b8"
+            android:textColor="#fff"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/editTextMessage_feeack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter message"
+            android:textSize="16sp"
+            android:inputType="textMultiLine"
+            android:textColorHint="#a2a1b8"
+            android:textColor="#fff"
+            android:minLines="4"
+            android:gravity="top" />
+
+        <Button
+            android:id="@+id/buttonSubmit_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="16dp"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_feeback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170sp"
+        android:layout_marginTop="100sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

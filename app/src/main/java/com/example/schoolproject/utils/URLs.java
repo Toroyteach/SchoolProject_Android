@@ -10,6 +10,8 @@ public class URLs {
 
     private static final String PROFILE_URL = "http://192.168.100.63/SchoolProject/testTwo/admin/service/users/api/utils/";
 
+    private static final String FEEDBACK_URL = "http://192.168.100.63/SchoolProject/testTwo/admin/service/contact/api/utils/";
+
 
     public static final String URL_REGISTER = ROOT_URL + "signup";
     public static final String URL_LOGIN= ROOT_URL + "login";
@@ -21,6 +23,7 @@ public class URLs {
     public static final String URL_UPDATE_USER_STATUS = PROFILE_URL + "updateStatus.php";
     public static final String URL_UPDATE_USER_LOCATION = PROFILE_URL + "updateLocation.php";
 
+    public static final String URL_GET_ACTIVE_WEATHER_DATA = PROFILE_URL + "getActiveWeatherData.php";
 
     public static final String URL_CREATE_ALERT = ALERT_CRUD_URL + "create.php";
     public static final String URL_READ_ALERT = ROOT_URL + "read.php";
@@ -34,5 +37,7 @@ public class URLs {
     public static final String URL_GET_NOTIFICATIONS = NOTIFICATION_URL + "notificationsSent.php";
     public static final String URL_MARK_NOTIFICATION_RED = NOTIFICATION_URL + "markAsRead.php";
     public static final String URL_DELETE_NOTIFICATION = NOTIFICATION_URL + "deleteNotificationSent.php";
+
+    public static final String URL_POST_FEEDBACK = FEEDBACK_URL + "createFeedback.php";
 
 }
