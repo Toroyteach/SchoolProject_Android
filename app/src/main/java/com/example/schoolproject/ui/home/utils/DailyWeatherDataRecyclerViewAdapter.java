@@ -47,9 +47,9 @@ public class DailyWeatherDataRecyclerViewAdapter  extends RecyclerView.Adapter<D
         String rainfall = String.valueOf(dailyWeatherDataModel.getRainfall());
 
         holder.dailytemperature.setText(temperature+"\u2103");
-        holder.dailywindspeed.setText(windspeed);
+        holder.dailywindspeed.setText(windspeed+"m/s");
         holder.dailyuvi.setText(uvi);
-        holder.dailyrain.setText(rainfall);
+        holder.dailyrain.setText(rainfall+"mm/h");
         holder.dailyweather.setText(dailyWeatherDataModel.getWeather());
         holder.dailydescription.setText(dailyWeatherDataModel.getDescription());
 

@@ -210,6 +210,8 @@ public class GalleryFragment extends Fragment {
                     String message = respObj.getString("message");
                     Toast.makeText(getContext(), message, Toast.LENGTH_LONG).show();
 
+                    getNotificationsCount();
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }

@@ -99,12 +99,10 @@ public class UpdateProfileActivity extends AppCompatActivity {
 
         boolean isSuccess = false;
         String username = usernameEditText.getText().toString().trim();
-        String password = passwordEditText.getText().toString().trim();
-        String confirmPassword = confirmPasswordEditText.getText().toString().trim();
         String phone = phoneEditText.getText().toString().trim();
         String email = emailEditText.getText().toString().trim();
 
-        if (username.isEmpty() || password.isEmpty() || confirmPassword.isEmpty() || phone.isEmpty() || email.isEmpty()) {
+        if (username.isEmpty() || phone.isEmpty() || email.isEmpty()) {
             Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
             return;
         }
@@ -116,13 +114,8 @@ public class UpdateProfileActivity extends AppCompatActivity {
             return;
         }
 
-        if (!password.equals(confirmPassword)) {
-            Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show();
-            return;
-        }
-
         // If all checks pass, concatenate the response and display a toast message
-        postDataUsingVolley(username, password, phone, email);
+        postDataUsingVolley(username, phone, email);
     }
 
     public void submitPasswordDetails() {
@@ -144,7 +137,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
         postPasswordDataUsingVolley(password);
     }
 
-    private void postDataUsingVolley(String username, String password, String phone, String email) {
+    private void postDataUsingVolley(String username, String phone, String email) {
         // url to post our data
         progressBar.setVisibility(View.VISIBLE);
 
@@ -178,13 +171,18 @@ public class UpdateProfileActivity extends AppCompatActivity {
                     String status = userObject.getString("status");
 
                     SharedPrefManager sharedPrefManager = new SharedPrefManager(getApplicationContext());
-                    User updatedUser = new User(id, username, phone, email, deviceToken, status);
-                    sharedPrefManager.updateUserProfile(updatedUser);
+                    User user =  SharedPrefManager.getInstance(getApplicationContext()).getUser();
+
+                    user.setPhone(phone);
+                    user.setEmail(email);
+                    user.setUsername(username);
+
+                    sharedPrefManager.updateUserProfile(user);
+
 
                     getUserProfileData();
 
                     finish();
-                    //Call the method to refresh the list of custom alerts
 
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -207,7 +205,6 @@ public class UpdateProfileActivity extends AppCompatActivity {
                 // on below line we are passing our key
                 // and value pair to our parameters.
                 params.put("username", username);
-                params.put("password", password);
                 params.put("email", email);
                 params.put("phone", phone);
 
