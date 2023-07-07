@@ -344,7 +344,7 @@ public class AlertshowFragment extends Fragment {
             public void onErrorResponse(VolleyError error) {
                 // method to handle errors.
                 progressBar.setVisibility(View.GONE);
-                Toast.makeText(getActivity(), "Fail to get response = " + error, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Fail to create User Alert ", Toast.LENGTH_SHORT).show();
             }
         }) {
             @Override
@@ -371,7 +371,6 @@ public class AlertshowFragment extends Fragment {
         // a json object request.
         queue.add(request);
     }
-
 
     private void fetchDataFromEndpoint() {
 
@@ -420,6 +419,7 @@ public class AlertshowFragment extends Fragment {
 
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Toast.makeText(getContext(), "An Error occured trying access server. Please Restart the Application", Toast.LENGTH_LONG).show();
                         }
                     }
                 },

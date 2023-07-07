@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/fragmentLayoutCrudGradientAnimation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20sp">
+
+        <!-- Text area explaining the use of the fragment -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/season_info_text"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:gravity="center"
+            android:background="#D5C1C1"/>
+
+        <!-- Season name input field -->
+        <EditText
+            android:id="@+id/editTextSeasonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Season Name"
+            android:padding="16dp"
+            android:background="#D5C1C1"/>
+
+        <!-- Start date for the season -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="#D5C1C1">
+
+            <TextView
+                android:id="@+id/txtview_seasoneStartdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Season Start Date"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/buttonSeasonStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="100sp"/>
+
+        </LinearLayout>
+
+        <!-- Harvesting date button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="#D5C1C1">
+
+            <TextView
+                android:id="@+id/txtview_seasonenddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Season End Date"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/buttonSeasonEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Date"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="100sp"/>
+
+        </LinearLayout>
+
+        <!-- Linear layout for buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <!-- Update button -->
+
+            <!-- Submit button -->
+            <Button
+                android:id="@+id/buttonSubmitSeason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="#fff"
+                android:layout_marginStart="15dp"/>
+
+        </LinearLayout>
+
+        <!-- RecyclerView for displaying previously added seasons -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSeasons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="#D5C1C1"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar_season"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

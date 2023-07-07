@@ -26,11 +26,22 @@
             android:textColor="#fff"/>
 
         <TextView
+            android:id="@+id/text_explanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/are_you_displeased_with_our_services_please_leave_us_a_feedback"
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#fff"/>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Subject:"
             android:textSize="16sp"
-            android:textColor="#fff"/>
+            android:textColor="#fff"
+            android:layout_marginTop="20sp"/>
 
         <EditText
             android:id="@+id/editTextSubject_feedback"

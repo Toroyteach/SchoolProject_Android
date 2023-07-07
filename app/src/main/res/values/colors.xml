@@ -4,4 +4,12 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="alertItemBackground">#7A3939</color>
+
+    <color name="contentBodyColor">#2A2E43</color>
+    <color name="contentTextColor">#fff</color>
+    <color name="bottomNavigationBackground">#2A2E43</color>
+    <color name="featuredNewsContentColor">#fff</color>
+    <color name="miniTitle">#fff</color>
+
+    <color name="imageBorderColor">#E01E7A</color>
 </resources>

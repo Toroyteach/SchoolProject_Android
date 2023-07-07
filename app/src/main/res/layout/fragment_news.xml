@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_list"
+        android:id="@+id/homefragmentAnimation"
+        tools:context=".ui.news.NewsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingBottom="10dp"
+        android:elevation="999dp"
+        android:gravity="bottom"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_edittext_bg"
+            android:hint="@string/search_latest_news"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="10sp"
+            android:paddingLeft="10sp">
+
+            <!--replace with recycler view-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/viewParent.headerText"
+                    android:id="@+id/main_news_title"
+                    android:textSize="16sp"
+                    android:text="Google’s new free app teaches kids  \nto read by listening to them"/>
+
+                <ImageView
+                    android:id="@+id/main_news_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="160sp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/image_featured_news" />
+
+                <TextView
+                    android:id="@+id/main_news_body"
+                    style="@style/miniTitle"
+                    android:maxLines="2"
+                    android:textColor="@color/featuredNewsContentColor"
+                    android:layout_marginTop="5dp"
+                    android:text="Google has just ripped the beta label off Rivet, its \nfree mobile app designed to help young children learn to read. "/>
+            </LinearLayout>
+
+            <!--replace with recycler view-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/newsrecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar_news"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

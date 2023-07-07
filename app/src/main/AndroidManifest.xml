@@ -21,6 +21,16 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ui.charts.ChartActivity"
+            android:exported="false"
+            android:label="@string/title_activity_crops_distribution_charts"
+            android:parentActivityName=".MenuActivity"/>
+        <activity
+            android:name=".ui.cropsDistribution.CropsDistributionActivity"
+            android:exported="false"
+            android:label="@string/title_activity_crops_distribution"
+            android:parentActivityName=".MenuActivity" />
+        <activity
             android:name=".SplashScreenActivity"
             android:exported="true"
             android:label="@string/title_activity_main">
@@ -47,8 +57,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.SchoolProject.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.SchoolProject.NoActionBar" />
 
         <service
             android:name=".utils.FirebaseUtils"

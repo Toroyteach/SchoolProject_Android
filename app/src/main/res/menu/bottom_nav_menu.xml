@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_crop"
+        android:icon="@drawable/ic_crop_icon_foreground"
+        android:title="@string/create_crop" />
+
+    <item
+        android:id="@+id/navigation_season"
+        android:icon="@drawable/ic_season_icon_foreground"
+        android:title="@string/create_season" />
+
+    <item
+        android:id="@+id/navigation_distribution"
+        android:icon="@drawable/ic_distribution_icon_foreground"
+        android:title="@string/distribution" />
+
+</menu>

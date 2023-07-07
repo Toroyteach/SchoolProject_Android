@@ -185,7 +185,6 @@ public class HomeFragment extends Fragment {
                             adapterh.notifyDataSetChanged();
 
 
-
                             // Read current object
                             JSONObject currentObject = dataObject.getJSONObject("current");
                             // Process current object
@@ -251,7 +250,6 @@ public class HomeFragment extends Fragment {
         weathertxt.setText(weather);
 
     }
-
 
     public static String findMatchingPrefix(String input, String[] prefixes, int accuracy) {
         for (String prefix : prefixes) {

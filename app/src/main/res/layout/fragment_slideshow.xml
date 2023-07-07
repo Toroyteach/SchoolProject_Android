@@ -17,6 +17,14 @@
         android:padding="16dp"
         android:background="#D5C1C1">
 
+        <TextView
+            android:id="@+id/text_explanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alertst_string"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:gravity="center"/>
 
         <Spinner
             android:id="@+id/spinnerAlertType"
@@ -90,7 +98,6 @@
 
 
         </LinearLayout>
-
 
 
         <EditText

@@ -28,6 +28,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.schoolproject.Auth.User;
 import com.example.schoolproject.R;
 import com.example.schoolproject.services.SharedPrefManager;
+import com.example.schoolproject.ui.alerts.utils.UserCustomAlertModel;
 import com.example.schoolproject.ui.notification.utils.UserNotificationModel;
 import com.example.schoolproject.ui.notification.utils.UserNotificationRecyclerViewAdapter;
 import com.example.schoolproject.utils.URLs;
@@ -46,11 +47,11 @@ public class NotificationFragment extends Fragment {
     private NotificationFragment binding;
 
     //private ArrayList<UserNotificationModel> notificationList;
-    private UserNotificationRecyclerViewAdapter adapter;
 
     private RelativeLayout animationRelative;
     AnimationDrawable animationDrawable;
 
+    private UserNotificationRecyclerViewAdapter adapter;
     private RecyclerView recyclerView;
     private List<UserNotificationModel> notificationList;
 
@@ -97,28 +98,43 @@ public class NotificationFragment extends Fragment {
         final int userId = user.getId();
 
         String url = URLs.URL_GET_NOTIFICATIONS + "?id="+ userId;
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null,
-                new Response.Listener<JSONArray>() {
+
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+                new Response.Listener<String>() {
                     @Override
-                    public void onResponse(JSONArray response) {
+                    public void onResponse(String response) {
                         // Parse JSON data and populate the contactList
 
-                        for (int i = 0; i < response.length(); i++) {
-                            try {
-                                JSONObject jsonObject = response.getJSONObject(i);
-                                String alertName = jsonObject.getString("option_name");
-                                String usermessage = jsonObject.getString("user_message");
-                                String upperlimit = jsonObject.getString("max_value");
-                                String lowerlimit = jsonObject.getString("min_value");
-                                String notificationtime = jsonObject.getString("date_sent");
-                                String notificationid = jsonObject.getString("notification_id");
-                                String readAt = jsonObject.getString("read_at");
+                        try {
 
-                                UserNotificationModel contact = new UserNotificationModel(alertName, usermessage, upperlimit, lowerlimit, notificationtime, notificationid, readAt);
-                                notificationList.add(contact);
-                            } catch (JSONException e) {
-                                e.printStackTrace();
+                            JSONObject obj = new JSONObject(response);
+                            if(obj.optString("status").equals("true")){
+
+                                JSONArray dataArray  = obj.getJSONArray("data");
+
+                                notificationList.clear();
+
+                                for (int i = 0; i < dataArray.length(); i++) {
+                                    JSONObject dataobj = dataArray.getJSONObject(i);
+
+                                    String alertName =  dataobj.getString("option_name");
+                                    String usermessage =  dataobj.getString("user_message");
+                                    String upperlimit =  dataobj.getString("max_value");
+                                    String lowerlimit =  dataobj.getString("min_value");
+                                    String notificationtime =  dataobj.getString("date_sent");
+                                    String notificationid =  dataobj.getString("notification_id");
+                                    String readAt =  dataobj.getString("read_at");
+
+                                    UserNotificationModel contact = new UserNotificationModel(alertName, usermessage, upperlimit, lowerlimit, notificationtime, notificationid, readAt);
+                                    notificationList.add(contact);
+                                }
+
                             }
+
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            // Handle JSON parsing error
                         }
 
                         // Notify the adapter that the data set has changed
@@ -133,12 +149,14 @@ public class NotificationFragment extends Fragment {
                             Toast.makeText(getContext(), "You Do not have Any Notifications", Toast.LENGTH_LONG).show();
                         } else {
                             Toast.makeText(getContext(), error.getMessage(), Toast.LENGTH_LONG).show();
+                            System.out.println(error.getMessage());
                         }
                     }
                 });
 
         // Add the request to the Volley request queue
-        Volley.newRequestQueue(requireContext()).add(jsonArrayRequest);
+        RequestQueue requestQueue = Volley.newRequestQueue(requireContext());
+        requestQueue.add(stringRequest);
     }
 
     public void onDeleteClick(int position) {

@@ -119,5 +119,37 @@
     <string name="feedback_form">Feedback Form</string>
     <string name="pop">POP</string>
     <string name="_0_2">0.2</string>
+    <string name="search_latest_news">Search Latest News...</string>
+    <string name="back_to_beige_decoding_this_nseason_s_most_unlikely_of_the">Back to beige: decoding this \nseason’s most unlikely, of the</string>
+    <string name="as_far_as_trends_go_you_d_be_forgiven_nfor_assuming_that_beige_equals_boring">As far as trends go, you’d be forgiven \nfor assuming that beige equals boring.</string>
+    <string name="news">News</string>
+    <string name="title_activity_crops_distribution">Crops Distribution</string>
+    <string name="title_activity_crops_distribution_charts">Crops Distribution Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="distribution">Distribution</string>
+    <string name="create_season">Create Season</string>
+    <string name="create_crop">Create Crop</string>
+    <string name="crops_fragment_description">Here you can create a crop Item that you have planted and would like to monitor by adding the Planting and Harvesting Date.</string>
+    <string name="crop_name">Crop Name</string>
+    <string name="planting_date">Planting Date</string>
+    <string name="harvesting_date">Harvesting Date</string>
+    <string name="distribution_info_text">This section you can choose your already added Crops and Season and attatch it to a distribution so that you can monitor how your crops does in a season</string>
+    <string name="select_crop_id">Select Crop ID</string>
+    <string name="select_season_id">Select Season ID</string>
+    <string name="crop_id">Crop ID:</string>
+    <string name="season_id">Season ID:</string>
+    <string name="season_info_text">This section allows you to create how a season is defined in your framing practice. Use it to map out how your crops plating to harvesting is going to take.</string>
+    <string name="select_date">Select Date</string>
+    <string name="alertst_string">Here create a custom notification for the weather phenomena that you will get as notification when that range is met</string>
+    <string name="manage_farm">Manage Farm</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="are_you_displeased_with_our_services_please_leave_us_a_feedback">Are you Displeased with our services please leave us a feedback</string>
+    <string name="crops_per_season">Crops Per Season</string>
+    <string name="distribution_trends_over_time_per_crop">Distribution Trends Over Time Per Crop</string>
+    <string name="planting_harvesting_treds_over_seasons">Planting Harvesting Treds Over Seasons</string>
+    <string name="distribution_crops_per_season">Distribution Crops Per Season</string>
+    <string name="crops_size_distribution">Crops Size Distribution</string>
 
 </resources>

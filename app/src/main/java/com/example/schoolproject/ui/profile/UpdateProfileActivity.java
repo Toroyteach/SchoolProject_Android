@@ -25,6 +25,7 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class UpdateProfileActivity extends AppCompatActivity {
 
@@ -83,6 +84,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 
     private void getUserProfileData() {

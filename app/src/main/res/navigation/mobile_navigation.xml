@@ -12,6 +12,12 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/nav_news"
+        android:name="com.example.schoolproject.ui.news.NewsFragment"
+        android:label="@string/news"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.schoolproject.ui.profile.GalleryFragment"
         android:label="@string/menu_gallery"
@@ -20,7 +26,7 @@
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.schoolproject.ui.alerts.AlertshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="Weather Alerts"
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment

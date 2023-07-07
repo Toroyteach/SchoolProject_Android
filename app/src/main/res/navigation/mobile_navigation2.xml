@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/navigation_crop">
+
+    <fragment
+        android:id="@+id/navigation_crop"
+        android:name="com.example.schoolproject.ui.cropsDistribution.ui.crops.CropFragment"
+        android:label="Create Crop"
+        tools:layout="@layout/fragment_crops" />
+
+    <fragment
+        android:id="@+id/navigation_season"
+        android:name="com.example.schoolproject.ui.cropsDistribution.ui.season.SeasonFragment"
+        android:label="Create Season"
+        tools:layout="@layout/fragment_season" />
+
+    <fragment
+        android:id="@+id/navigation_distribution"
+        android:name="com.example.schoolproject.ui.cropsDistribution.ui.distribution.DistributionFragment"
+        android:label="Create Distribution"
+        tools:layout="@layout/fragment_distribution" />
+</navigation>
